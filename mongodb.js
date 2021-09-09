@@ -11,7 +11,7 @@ const { MongoClient, ObjectID } = require('mongodb')
 const id = new ObjectID()
 
 const connectionURL = process.env.MONGODB_URL
-const databaseName = 'task-manager'
+const databaseName = 'task-manager-api'
 
 MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) => {
 
